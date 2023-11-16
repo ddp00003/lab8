@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('/src/todolistimg.jpg') center/cover no-repeat;
+}
+
+.app-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+}
+
+input:focus {
+  border-color: #ccc;
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+}
+
+li {
+  display: grid;
+  align-items: center; /* Center items vertically */
+  text-align: center; /* Center text horizontally */
+  grid-template-columns: 1fr auto; /* Adjust column widths as needed */
+  width: 20em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+li:nth-child(even) {
+  background-color: #e13333;
+}
+
+li:nth-child(odd) {
+  background-color: #96b4b8;
+}
+
+li:hover {
+  background-color: #dddddd;
+  color: #3333337d;
+}
+
+button.add-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.close-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #eeecec;
+  color: #8c0c0c;
+  border: none;
+  margin-left: 160px;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  
+ 
+  
+}
+
+button img {
+  width: 12px; /* Adjust the size of the close icon as needed */
+  height: 12px;
+}
